@@ -1,0 +1,19 @@
+.logo {
+  @extend %logo;
+  .logo-studio {
+    @extend %logo;
+    color: var(--text-color);
+  }
+//   padding-top: 16px;
+//   padding-bottom: 16px;
+//   padding-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+  .contact-list {
+    display: none;
+  }
+}

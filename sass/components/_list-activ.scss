@@ -1,0 +1,14 @@
+.nav .list-activ {
+  color: var(--logo-button-contact-color);
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background: var(--logo-button-contact-color);
+  }
+}
