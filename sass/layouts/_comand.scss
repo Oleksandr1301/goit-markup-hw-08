@@ -1,0 +1,78 @@
+.command {
+  background-color: var(--background-color-button);
+}
+
+.command-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.command-item {
+  background-color: var(--text-color-button-hover);
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.command-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.command-position {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--p-color-index);
+  margin-bottom: 16px;
+}
+
+/* Соцмережі команди */
+
+.comand-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.comand-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.comand-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+  }
+}
+
+.comand-soc-icon {
+  fill: var(--comand-soc-icon);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .comand-soc-link:hover &,
+  .comand-soc-link:focus & {
+    fill: #ffffff;
+  }
+}

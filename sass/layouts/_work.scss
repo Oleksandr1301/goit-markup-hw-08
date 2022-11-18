@@ -1,0 +1,39 @@
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-top: 0px;
+}
+
+// .work {
+  
+// }
+.type-work {
+  display: flex;
+  gap: 30px;
+}
+
+.type-work__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.applications {
+  position: relative;
+}
+
+.applications__text {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  line-height: 1, 14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-color-button-hover);
+}
