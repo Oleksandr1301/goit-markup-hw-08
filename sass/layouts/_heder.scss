@@ -4,14 +4,15 @@
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
   & .container {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
 }
 
 nav {
   display: flex;
   align-items: center;
+  
 
   .logo {
     @extend %logo;
@@ -25,6 +26,9 @@ nav {
   }
 
   .nav-list {
+    @media screen and (max-width: 767px) {
+    display: none;
+  }
     display: flex;
     margin-left: 93px;
     padding-top: 32px;
@@ -44,6 +48,9 @@ nav {
 /* Контакти хедера */
 
 .contact-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   display: flex;
   align-items: center;
   margin-left: auto;
