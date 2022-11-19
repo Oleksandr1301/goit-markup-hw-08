@@ -19,8 +19,14 @@
 }
 .menu-button:hover,.menu-button:focus,
 .mob-menu__button:hover, .mob-menu__button:focus {
-  color: var(--logo-button-contact-color);
+  fill: var(--logo-button-contact-color);
 }
+
+.mob-menu__button {
+margin-bottom: 8px;
+margin-right: 15px;
+}
+
 .mob-menu {
   @media screen and (min-width: 768px) {
     display: none;
@@ -45,9 +51,10 @@
 
 .menu {
   background-color: var(--text-color-button-hover);
+   
 }
 .icon-cross {
-  margin-bottom: 8px;
+ 
 
 }
 .mob-menu__list {
