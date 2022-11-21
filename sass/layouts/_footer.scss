@@ -4,14 +4,35 @@
   padding-bottom: 60px;
 }
 .footer-section {
-  display: flex;
+   @media screen and (min-width: 1200px) {
+    display: flex;
   align-items: baseline;
   justify-content: space-between;
+  gap: 94px;
+  }
+  
+  text-align: center;
+}
+
+.footer-tablet {
+ @media screen and (min-width: 768px)  {
+    display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 165px;
+}
+@media screen and (min-width: 1200px)  {
+  //   display: flex;
+  // align-items: baseline;
+  // justify-content: space-between;
+  gap: 94px;
+}
 }
 .address {
   font-style: normal;
-  margin-top: 20px;
-
+  // margin-top: 20px;
+margin-bottom: 60px;
+margin-top: 28px;
   & li + li {
     margin-top: 9px;
   }
@@ -27,6 +48,7 @@
     @extend %logo;
     color: var(--text-color-button-hover);
   }
+  // padding-bottom: 28px;
 }
 
 /* Контакти */
@@ -57,13 +79,15 @@
   line-height: 16px;
   color: var(--text-color-button-hover);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .footer-soc-list {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-bottom: 60px;
+  
 }
 
 .footer-soc-item {
@@ -93,11 +117,19 @@
 /* footer Приєднуйтесь */
 
 .subscription-form {
-  display: flex;
+   @media screen and (min-width: 768px) {
+    // text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: center;
+  }
 }
 
 .subscription-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -107,7 +139,7 @@
   color: var(--text-color-button-hover);
   background-color: #2f303a;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+margin-bottom: 20px;
   &:focus {
     border-color: var(--logo-button-contact-color);
   }
@@ -117,18 +149,26 @@
     font-size: 16px;
     line-height: 1.25;
   }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .subscription-submit {
   @extend %button;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+margin-left: auto;
+margin-right: auto;
   &:hover,
   &:focus {
     background-color: #188ce8;
   }
   padding: 10px 28px;
-  margin-left: 12px;
+   @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    height: 50px;
+  }
+  
 }
 
 .subscription-icon {
