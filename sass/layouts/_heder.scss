@@ -3,9 +3,12 @@
   font-weight: 500;
   line-height: 1.14;
   border-bottom: 1px solid #ececec;
-  & .container {
-    display: flex;
-    align-items: center;
+  @media screen and (min-width: 768px) {
+    & .container {
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.02em;
+    }
   }
 }
 
@@ -28,15 +31,18 @@ nav {
     @media screen and (max-width: 767px) {
       display: none;
     }
-     @media screen and (min-width: 768px) {
-      margin-left: 88px;
-    }
     display: flex;
-    margin-left: 93px;
+
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
     gap: 50px;
+    @media screen and (min-width: 768px) {
+      margin-left: 88px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: 93px;
+    }
   }
 }
 .nav-link {
@@ -52,11 +58,16 @@ nav {
   @media screen and (max-width: 767px) {
     display: none;
   }
-
-  @media screen and (max-width: 1199px) {
+  //  display: flex;
+  //   align-items: center;
+  //   margin-left: auto;
+  //   gap: 40px;
+  @media screen and (min-width: 768px) {
     margin-left: 90px;
+    
   }
   @media screen and (min-width: 1200px) {
+    // min-width: 1200px;
     display: flex;
     align-items: center;
     margin-left: auto;
