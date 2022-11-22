@@ -23,7 +23,7 @@
   <body>
     <!-- Навігація -->
 
-    <header class="header">
+     <header class="header">
       <div class="container">
         <nav>
           <a href="./index.html" lang="en" class="logo" >
@@ -32,15 +32,21 @@
           </a>
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link ">Студія</a>
+              <a href="./index.html" class="nav-link list-activ">Студія</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link list-activ">Портфоліо</a>
+              <a href="./portfolio.html" class="nav-link">Портфоліо</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Контакти</a>
             </li>
           </ul>
+          <button type="button" class="menu-button js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu"  width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-menu" href="./images/icons1.svg#icon-menu" ></use>
+             
+            </svg>
+          </button>
         </nav>
 
 
@@ -59,7 +65,70 @@
           </li>
         </ul>
       </div>
-    </header>
+
+<!-- Мобільне меню -->
+
+      <div class="mob-menu container js-menu-container " id='mobile-menu'>
+        <button type="button" class="mob-menu__button js-close-menu">
+          <svg class="menu"  width="40" height="40" aria-label="Перемикач мобільного меню">
+             
+              <use class="icon-cross" href="./images/icons1.svg#icon-close_40px" ></use>
+            </svg>
+        </button>
+        <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link mob-list-activ">Студія</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="#" class="mob-menu__link">Контакти</a>
+            </li>
+          </ul>
+
+ <!-- Контакти меню -->
+
+          <ul class="mob-contact-list">
+            <li class="mob-contact-item">
+            <a href="tel:+380961111111" class="mob-phone"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-contact-item">
+            <a href="mailto:info@devstudio.com" class="mob-email"
+              >info@devstudio.com</a
+            >
+          </li>
+          
+        </ul>
+
+        <!-- Соцмережі меню -->
+
+        <ul class="mob-soc__list">
+            <li class="mob-soc__item">
+            <a href="" class="mob-soc__link" target="_blank" rel="noopener noreferrer"
+              >Instagram <span class="mob-soc__line">|</span> </a
+            >
+          </li>
+          <li class="mob-soc__item">
+            <a href="" class="mob-soc__link" target="_blank" rel="noopener noreferrer"
+              >Twitter<span class="mob-soc__line">|</span></a
+            >
+          </li>
+          <li class="mob-soc__item">
+            <a href="" class="mob-soc__link" target="_blank" rel="noopener noreferrer"
+              >Facebook<span class="mob-soc__line">|</span></a
+            >
+          </li>
+          <li class="mob-soc__item">
+            <a href="" class="mob-soc__link" target="_blank" rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul> 
+       </div>
+    </header> 
 
     <!-- Мейн -->
     
@@ -409,5 +478,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
