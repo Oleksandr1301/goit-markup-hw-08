@@ -575,7 +575,7 @@ nav .nav-list {
   max-width: 480px;
   text-align: center;
   background-color: var(--section-slogan-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herou.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -586,6 +586,7 @@ nav .nav-list {
     max-width: 768px;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-tab.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -593,6 +594,7 @@ nav .nav-list {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/hero-dec.jpg);
   }
 }
 
