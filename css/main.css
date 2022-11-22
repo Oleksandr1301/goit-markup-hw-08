@@ -152,14 +152,14 @@ body {
 }
 
 .modal {
-  width: 550px;
+  width: 450px;
   min-height: 609px;
   background-color: var(--text-color-button-hover);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 40px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
   transition: transform 250ms linear, border-radius 250ms linear;
@@ -167,6 +167,12 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) rotate(-360deg);
   border-radius: 50%;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 550px;
+    top: 50%;
+  }
 }
 
 .modal-close {
@@ -276,11 +282,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 7px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--p-color-index);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .label-checkbox {
+    font-size: 14px;
+  }
 }
 
 .custom-check {
