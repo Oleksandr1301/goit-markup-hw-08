@@ -93,7 +93,6 @@ body {
 }
 
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -115,6 +114,22 @@ body {
 }
 
 .section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.footer__section-title {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
@@ -122,7 +137,7 @@ body {
   text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
-  .section-title {
+  .footer__section-title {
     text-align: left;
   }
 }
@@ -557,16 +572,28 @@ nav .nav-list {
 }
 
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   text-align: center;
   background-color: var(--section-slogan-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herou.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .slogan {
@@ -577,8 +604,17 @@ nav .nav-list {
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  width: 360px;
   margin-bottom: 30px;
   color: var(--text-color-button-hover);
+}
+@media screen and (min-width: 1200px) {
+  .slogan {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .studio-button {
@@ -635,8 +671,15 @@ nav .nav-list {
 @media screen and (min-width: 768px) {
   .command-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .command-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -646,7 +689,6 @@ nav .nav-list {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
-  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .command-item {
@@ -790,8 +832,7 @@ nav .nav-list {
 
 .footer {
   background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 
 .footer-section {
@@ -806,12 +847,15 @@ nav .nav-list {
   }
 }
 
+.footer-tablet {
+  padding-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .footer-tablet {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    gap: 165px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -824,6 +868,11 @@ nav .nav-list {
   font-style: normal;
   margin-bottom: 60px;
   margin-top: 28px;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 .address li + li {
   margin-top: 9px;
@@ -891,20 +940,35 @@ nav .nav-list {
   background-color: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .subscription {
+    margin-right: 15px;
+    margin-left: 15px;
+    display: block;
+  }
+}
+
 .footer-soc-icon {
   fill: #ffffff;
 }
 
 /* footer Приєднуйтесь */
+.subscription-form {
+  margin-right: 15px;
+  margin-left: 15px;
+}
 @media screen and (min-width: 1200px) {
   .subscription-form {
     display: flex;
     text-align: center;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
 .subscription-input {
-  width: 450px;
+  display: block;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -933,6 +997,13 @@ nav .nav-list {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .subscription-input {
+    width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription-input {

@@ -1,5 +1,5 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   text-align: center;
   background-color: var(--section-slogan-color);
   background-image: linear-gradient(
@@ -10,27 +10,43 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .slogan {
   font-size: 26px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  // min-width: 360px;
+  width: 360px;
   margin-bottom: 30px;
   color: var(--text-color-button-hover);
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    
+  }
 }
 
 .studio-button {
- @extend %button;
-  
+  @extend %button;
+
   padding: 10px 24px;
   margin: 0 auto;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),

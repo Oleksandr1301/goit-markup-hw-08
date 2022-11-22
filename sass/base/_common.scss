@@ -1,13 +1,17 @@
 body {
+
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--text-color-button-hover);
+//  @media screen and (min-width: 1200px) {
+//     max-width: 1600px;
+//   }
 }
 
 .container {
-  width: 100%;
+ 
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
