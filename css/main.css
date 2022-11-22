@@ -878,6 +878,7 @@ nav .nav-list {
 @media screen and (min-width: 1200px) {
   .footer-tablet {
     gap: 94px;
+    margin-bottom: 0;
   }
 }
 
