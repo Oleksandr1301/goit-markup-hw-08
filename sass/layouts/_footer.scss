@@ -18,7 +18,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
     // gap: 165px;
     margin-bottom: 60px;
   }
@@ -30,13 +30,23 @@
     margin-bottom: 0;
   }
 }
+.footer-address {
+   @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    
+    text-align: left;
+  }
+}
 .address {
   font-style: normal;
   // margin-top: 20px;
-  margin-bottom: 60px;
+ 
   margin-top: 28px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    text-align: left;
   }
   & li + li {
     margin-top: 9px;
