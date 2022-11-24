@@ -21,6 +21,7 @@
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
+    
   }
 
   .qualities__titles {
@@ -28,6 +29,10 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+     @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   .qualities__text {
